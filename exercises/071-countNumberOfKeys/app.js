@@ -9,7 +9,8 @@ let obj = {
 
 function countNumberOfKeys(obj) {
     // your code here
-   
+   let arr = Object.keys(obj)
+    return arr.length;
 }
 
 let output = countNumberOfKeys(obj);
