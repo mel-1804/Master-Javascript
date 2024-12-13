@@ -1,6 +1,14 @@
 function getProductOfAllElementsAtProperty(obj, key) {
     // your code here
-    
+    if(!obj[key] || !Array.isArray(obj[key]) || obj[key].length === 0){
+      return 0
+    } else {
+      let product = 1;
+      for(i in obj[key]){
+        product = product * obj[key][i];
+      }
+      return product;
+    }
 }
 
 let obj = {

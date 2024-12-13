@@ -1,6 +1,6 @@
 function filterOddElements(arr) {
   // your code here
-  
+  return arr.filter(i=> i%2!=0);
 }
 
 let output = filterOddElements([1, 2, 3, 4, 5]);
