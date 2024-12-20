@@ -1,5 +1,11 @@
 function fromListToObject(array) {
   // your code here
+  let obj = {};
+  for (let i of array){
+    obj[i[0]] = i[1];
+  }
+
+  return obj;
   
 }
 
