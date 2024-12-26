@@ -23,3 +23,5 @@ function greetCustomer(firstName) {
 }
 
 console.log(greetCustomer('Joe')); // --> 'Welcome back, Joe! We're glad you liked us the first time!'
+
+// por mi misma

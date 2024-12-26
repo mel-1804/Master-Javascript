@@ -7,3 +7,5 @@ function flipPairs(input) {
 let input = "Can you see what this is about?";
 let output = flipPairs(input);
 console.log(output); // --> aC noy ues ehwtat ih ssia obtu?
+
+// no pude sola

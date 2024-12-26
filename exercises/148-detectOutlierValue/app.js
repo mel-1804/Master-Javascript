@@ -13,13 +13,13 @@ function detectOutlierValue(string) {
     } 
 
     if(sumEven < sumOdd){
-        for(let x in arr){
-            if(parseInt(x)%2==0) return arr[x];
+        for(let i=0; i < arr.length; i++){
+            if(parseInt(arr[i])%2==0) return i + 1;
     }
 
 } else if(sumEven > sumOdd){
-        for(let x in arr){
-            if(parseInt(x)%2!=0) return arr[x];
+        for(let i=0; i < arr.length; i++){
+            if(parseInt(arr[i])%2!=0) return i + 1;
         }
     }      
 
@@ -30,3 +30,5 @@ console.log(detectOutlierValue("2 4 7 8 10")); // --> 3
 
 // Second number is even, while the rest of the numbers are odd
 console.log(detectOutlierValue("1 10 1 1"))  // --> 2
+
+// casi sola, tuve q ver problemas con mis loops (iterar normal, no con for...of ni for... in)
